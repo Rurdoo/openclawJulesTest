@@ -51,6 +51,6 @@ export const routedCommands: RouteSpec[] = cliCommandCatalog
   .map((entry) =>
     createParsedRoute({
       entry,
-      definition: routedCommandDefinitions[entry.route.id],
+      definition: routedCommandDefinitions[entry.route.id] as RoutedCommandDefinition,
     }),
   );
